@@ -30,7 +30,7 @@ roleRef:
 subjects:
 - apiGroup: rbac.authorization.k8s.io
   kind: User
-  name: chanwit
+  name: chanwit # change this to your Dev team member, or adding mmore team members here as an array 
 - kind: ServiceAccount
   name: dev-team
   namespace: apps
