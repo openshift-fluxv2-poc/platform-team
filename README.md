@@ -1,9 +1,11 @@
 # Platform Team
 
-Alice is an OpenShift Cluster-Admin. She'd like to use Flux in an OpenShift-ish way by
+Alice is an OpenShift Cluster-Admin. She'd like to use Flux in an OpenShift-ish way via its Web UI by
 
   - Installing Flux via OperatorHub
   - Bootstraping the platform setup with copy & paste via OpenShift YAML import
+
+and achieve the similar result with the CLI setup.
 
 ## Setup multi-tenant via OpenShift YAML import
 
@@ -30,7 +32,7 @@ metadata:
   name: multi-tenant-policy-enforcement
 spec:
   timeout: 2m
-  path: ./cluster/production
+  path: ./clusters/production
   interval: 5m
   prune: true
   force: false
@@ -62,7 +64,7 @@ metadata:
   name: multi-tenant-policy-enforcement
 spec:
   timeout: 2m
-  path: ./cluster/staging
+  path: ./clusters/staging
   interval: 5m
   prune: true
   force: false
