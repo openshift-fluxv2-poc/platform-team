@@ -2,8 +2,8 @@
 
 Alice is an OpenShift Cluster-Admin. She'd like to use Flux in an OpenShift-ish way via its Web UI by
 
-  - Installing Flux via OperatorHub
-  - Bootstraping the platform setup with copy & paste via OpenShift YAML import
+  1. Installing Flux via OperatorHub
+  1. Bootstraping the platform setup with copy & paste via OpenShift YAML import
 
 and achieve the similar result with the CLI setup.
 
