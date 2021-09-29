@@ -1,15 +1,20 @@
 # Platform Team
 
-Alice is an OpenShift Cluster-Admin. She'd like to use Flux in an OpenShift-ish way via its Web UI by
+Here's Flux multi-tenancy demo for OpenShift.
+
+Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to use Flux in an OpenShift-ish way via its Web UI by
 
   1. Installing Flux via OperatorHub
   1. Bootstraping the platform setup with copy & paste via OpenShift YAML import
 
 and achieve the similar result with the CLI setup.
 
-## Setup multi-tenant via OpenShift YAML import
+Persona: **Chanwit** is a member of the Dev team. You could also change user name or add other team members [here](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/tenants/base/dev-team/rbac.yaml#L33).
 
-### Production: Source & Kustomization
+## Production Cluster: Source & Kustomization
+
+You could copy below YAML snippets and import into OpenShift to kick off the setup without using CLI.
+
 ```
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
@@ -41,7 +46,7 @@ spec:
     kind: GitRepository
 ```
 
-### Staging: Source & Kustomization
+## Staging Cluster: Source & Kustomization
 ```
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
