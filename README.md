@@ -29,7 +29,7 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
   namespace: flux-system
-  name: multi-tenant-policy-enforcement
+  name: multi-tenant-production
 spec:
   timeout: 2m
   path: ./clusters/production
@@ -61,7 +61,7 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
   namespace: flux-system
-  name: multi-tenant-policy-enforcement
+  name: multi-tenant-staging
 spec:
   timeout: 2m
   path: ./clusters/staging
