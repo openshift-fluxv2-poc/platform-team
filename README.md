@@ -1,6 +1,6 @@
 # Platform Team
 
-Here's Flux multi-tenancy demo for OpenShift.
+Here's a Flux multi-tenancy demo for OpenShift. This work has been derived from the original Flux multi-tenancy example, which can be found [here](https://github.com/fluxcd/flux2-multi-tenancy).
 
 Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to use Flux in an OpenShift-ish way via its Web UI by
 
