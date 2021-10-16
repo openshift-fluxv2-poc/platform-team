@@ -9,7 +9,7 @@ Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to use Flux in an O
 
 and achieve the similar result with the CLI setup.
 
-Persona: **Chanwit** is a member of the Dev team. Please change user name, or add other users as team members [here](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/tenants/base/dev-team/rbac.yaml#L33) before proceed.
+Persona: **Chanwit** is a member of the Dev team. Please change user name, or add other users as team members [here](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/tenants/base/dev-team/rbac.yaml#L33) before proceed with your fork.
 
 ## Production Cluster: Source & Kustomization
 
