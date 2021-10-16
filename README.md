@@ -14,7 +14,7 @@ Persona: **Chanwit** is a member of the Dev team. Please change user name, or ad
 ## Production Cluster: Source & Kustomization
 
 You can copy the below YAML snippet, and import it directly into OpenShift to kick off the setup without using CLI.
-If you fork, please change the repo URL at this line to match the forked one.
+If you fork, please change the repo URL at this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L30) to match the forked one.
 
 ```
 ---
