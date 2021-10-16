@@ -27,11 +27,11 @@ spec:
   timeout: 20s
   gitImplementation: libgit2
   interval: 1m
-  url: 'https://github.com/openshift-fluxv2-poc/platform-team' # If you fork, please change this repo to match the forked one.
+  url: 'https://github.com/openshift-fluxv2-poc/platform-team' # If you fork, please change this repo URL to match the forked one.
   ref:
     branch: main
 ---
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
   namespace: flux-system
@@ -59,11 +59,11 @@ spec:
   timeout: 20s
   gitImplementation: libgit2
   interval: 1m
-  url: 'https://github.com/openshift-fluxv2-poc/platform-team'
+  url: 'https://github.com/openshift-fluxv2-poc/platform-team' # If you fork, please change this repo URL to match the forked one.
   ref:
     branch: main
 ---
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
   namespace: flux-system
