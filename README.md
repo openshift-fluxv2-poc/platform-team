@@ -9,11 +9,12 @@ Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to use Flux in an O
 
 and achieve the similar result with the CLI setup.
 
-Persona: **Chanwit** is a member of the Dev team. You could also change user name or add other team members [here](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/tenants/base/dev-team/rbac.yaml#L33).
+Persona: **Chanwit** is a member of the Dev team. Please change user name, or add other users as team members [here](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/tenants/base/dev-team/rbac.yaml#L33) before proceed.
 
 ## Production Cluster: Source & Kustomization
 
-You could copy below YAML snippets and import into OpenShift to kick off the setup without using CLI.
+You can copy the below YAML snippet, and import it directly into OpenShift to kick off the setup without using CLI.
+If you fork, please change the repo URL at this line to match the forked one.
 
 ```
 ---
@@ -26,7 +27,7 @@ spec:
   timeout: 20s
   gitImplementation: libgit2
   interval: 1m
-  url: 'https://github.com/openshift-fluxv2-poc/platform-team'
+  url: 'https://github.com/openshift-fluxv2-poc/platform-team' # If you fork, please change this repo to match the forked one.
   ref:
     branch: main
 ---
