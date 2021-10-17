@@ -8,19 +8,20 @@ Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to setup multi-tena
   2. Installing **Gatekeeper** via OperatorHub
      ![image](https://user-images.githubusercontent.com/10666/137627734-64edb06b-26d0-4169-b903-0a245d0aabf9.png)
   3. Bootstraping the multi-tenant setup with copy & paste via OpenShift YAML import
+     ![image](https://user-images.githubusercontent.com/10666/137634319-1aac84e8-a139-4e3b-857b-76eeabcb4770.png)
 
 and achieve the similar result as setting up with the CLI.
 
 Persona: **Chanwit** is a member of the Dev team. Please change user name, or add other users as team members [here](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/tenants/base/dev-team/rbac.yaml#L33) before proceed with your fork.
 
-
-
 After Alice setting up the platform, Chanwit would find the `apps` namespace and workloads running inside it after logging in.
+
+![image](https://user-images.githubusercontent.com/10666/137634584-270c72f8-b62a-4d58-a3e7-b9af4621a163.png)
 
 ## Production Cluster: Source & Kustomization
 
 You can copy the below YAML snippet, and import it directly into OpenShift to kick off the setup without using CLI.
-If you fork, please change the repo URL at this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L35) and also this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L68) to match the forked one.
+If you fork, please change the repo URL at this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L38) and also this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L71) to match the forked one.
 
 ```
 ---
