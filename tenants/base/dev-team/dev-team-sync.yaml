@@ -18,7 +18,8 @@ metadata:
 spec:
   serviceAccountName: dev-team
   targetNamespace: apps
-  interval: 5m
+  interval: 1m
+  timeout: 300s
   sourceRef:
     kind: GitRepository
     name: dev-team
