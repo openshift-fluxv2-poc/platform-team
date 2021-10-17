@@ -14,7 +14,7 @@ and achieve the similar result as setting up with the CLI.
 
 Persona: **Chanwit** is a member of the Dev team. Please change user name, or add other users as team members [here](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/tenants/base/dev-team/rbac.yaml#L33) before proceed with your fork.
 
-After Alice setting up the platform, Chanwit would find the `apps` namespace and workloads running inside it after logging in.
+After Alice setting up the platform, Chanwit would find the `apps` namespace and workloads running inside it after logging in. These workloads are deploy from his development repository which is located here: https://github.com/openshift-fluxv2-poc/dev-team. Chanwit is now able to use this repo as the GitOps repository for his team to further config and deploy apps.
 
 ![image](https://user-images.githubusercontent.com/10666/137634584-270c72f8-b62a-4d58-a3e7-b9af4621a163.png)
 
