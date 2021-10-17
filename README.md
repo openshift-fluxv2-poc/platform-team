@@ -4,8 +4,8 @@ Here's a Flux multi-tenancy demo for OpenShift. This work has been derived from 
 
 Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to use Flux in an OpenShift-ish way via its Web UI by
 
-  1. Installing Flux via OperatorHub
-  2. Installing GateKeeper via OperatorHub
+  1. Installing **Flux** via OperatorHub
+  2. Installing **Gatekeeper** via OperatorHub
      ![image](https://user-images.githubusercontent.com/10666/137627734-64edb06b-26d0-4169-b903-0a245d0aabf9.png)
   3. Bootstraping the multi-tenant setup with copy & paste via OpenShift YAML import
 
