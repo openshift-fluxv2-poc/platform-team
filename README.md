@@ -13,10 +13,12 @@ and achieve the similar result as setting up with the CLI.
 
 Persona: **Chanwit** is a member of the Dev team. Please change user name, or add other users as team members [here](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/tenants/base/dev-team/rbac.yaml#L33) before proceed with your fork.
 
+After Alice setting up the platform, Chanwit would find the `apps` namespace and workloads running inside it after logging in.
+
 ## Production Cluster: Source & Kustomization
 
 You can copy the below YAML snippet, and import it directly into OpenShift to kick off the setup without using CLI.
-If you fork, please change the repo URL at this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L33) and also this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L66) to match the forked one.
+If you fork, please change the repo URL at this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L35) and also this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L68) to match the forked one.
 
 ```
 ---
