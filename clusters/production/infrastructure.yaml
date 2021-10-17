@@ -14,8 +14,28 @@ spec:
   healthChecks:
     - apiVersion: apps/v1
       kind: Deployment
-      name: kyverno
-      namespace: kyverno
+      name: gatekeeper-audit
+      namespace: openshift-gatekeeper-system
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: gatekeeper-controller-manager
+      namespace: openshift-gatekeeper-system
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: policy-template
+  namespace: flux-system
+spec:
+  dependsOn:
+  - name: policy-engine
+  interval: 5m
+  sourceRef:
+    kind: GitRepository
+    name: platform-team
+  path: ./infra/policy-template
+  prune: true
+  validation: client
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
@@ -24,7 +44,7 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: policy-engine
+  - name: policy-template
   interval: 5m
   sourceRef:
     kind: GitRepository
