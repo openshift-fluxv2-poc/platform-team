@@ -19,7 +19,6 @@ spec:
   serviceAccountName: dev-team
   targetNamespace: apps
   interval: 1m
-  timeout: 300s
   sourceRef:
     kind: GitRepository
     name: dev-team
