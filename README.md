@@ -2,7 +2,7 @@
 
 Here's a Flux multi-tenancy demo for OpenShift. This work has been derived from the original Flux multi-tenancy example, which can be found [here](https://github.com/fluxcd/flux2-multi-tenancy).  A nice thing of the demo in this repo is that we will use only **Web UI of OpenShift** to install Flux and bootstrap the demo. Yes - as a Cluster-Admin user, you can up and running a GitOps system by just clicking. You click to install Flux via OperatorHub, then you click to import one of the follwoing snippets into your cluster, and your multi-tenant GitOps system will be ready to use in minutes.
 
-Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to use Flux in an OpenShift-ish way via its Web UI by
+Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to setup multi-tenancy environments using Flux in an OpenShift-ish way via its Web UI by
 
   1. Installing **Flux** via OperatorHub
   2. Installing **Gatekeeper** via OperatorHub
@@ -12,6 +12,8 @@ Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to use Flux in an O
 and achieve the similar result as setting up with the CLI.
 
 Persona: **Chanwit** is a member of the Dev team. Please change user name, or add other users as team members [here](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/tenants/base/dev-team/rbac.yaml#L33) before proceed with your fork.
+
+
 
 After Alice setting up the platform, Chanwit would find the `apps` namespace and workloads running inside it after logging in.
 
