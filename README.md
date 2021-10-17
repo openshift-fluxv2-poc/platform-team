@@ -23,7 +23,7 @@ After Alice setting up the platform, Chanwit would find the `apps` namespace and
 You can copy the below YAML snippet, and import it directly into OpenShift to kick off the setup without using CLI.
 If you fork, please change the repo URL at this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L38) and also this [line](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/README.md?plain=1#L71) to match the forked one.
 
-```
+```yaml
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
@@ -56,7 +56,7 @@ spec:
 ```
 
 ## Staging Cluster: Source & Kustomization
-```
+```yaml
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
