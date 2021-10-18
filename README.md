@@ -5,7 +5,7 @@ Here's a Flux multi-tenancy demo for OpenShift. This work has been derived from 
 Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to setup multi-tenancy environments using Flux in an OpenShift-ish way via its Web UI by
 
   1. Installing **Flux** via OperatorHub
-  2. Bootstraping the multi-tenant setup with copy & paste via OpenShift YAML import
+  2. Bootstraping the multi-tenant setup with copy & paste the below snippets [here](https://github.com/openshift-fluxv2-poc/platform-team#production-cluster-source--kustomization) into OpenShift YAML import
      ![image](https://user-images.githubusercontent.com/10666/137634319-1aac84e8-a139-4e3b-857b-76eeabcb4770.png)
 
 and achieve the similar result as setting up with the CLI.
