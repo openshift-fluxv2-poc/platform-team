@@ -1,10 +1,32 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: policy-engine-operator
+  namespace: flux-system
+spec:
+  interval: 5m
+  sourceRef:
+    kind: GitRepository
+    name: platform-team
+  path: ./infra/policy-engine-operator
+  prune: true
+  validation: client
+  healthChecks:
+  - apiVersion: apps/v1
+    kind: Deployment
+    name: gatekeeper-operator-controller
+    namespace: openshift-operators
+---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
   name: policy-engine
   namespace: flux-system
 spec:
-  interval: 10m
+  dependsOn:
+  - name: policy-engine-operator
+  interval: 5m
   sourceRef:
     kind: GitRepository
     name: platform-team
@@ -12,14 +34,14 @@ spec:
   prune: true
   validation: client
   healthChecks:
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: gatekeeper-audit
-      namespace: openshift-gatekeeper-system
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: gatekeeper-controller-manager
-      namespace: openshift-gatekeeper-system
+  - apiVersion: apps/v1
+    kind: Deployment
+    name: gatekeeper-audit
+    namespace: openshift-gatekeeper-system
+  - apiVersion: apps/v1
+    kind: Deployment
+    name: gatekeeper-controller-manager
+    namespace: openshift-gatekeeper-system
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization

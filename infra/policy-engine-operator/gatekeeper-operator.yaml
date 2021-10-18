@@ -1,0 +1,27 @@
+---
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  annotations:
+    include.release.openshift.io/ibm-cloud-managed: 'true'
+    include.release.openshift.io/self-managed-high-availability: 'true'
+    include.release.openshift.io/single-node-developer: 'true'
+    olm.providedAPIs: Gatekeeper.v1alpha1.operator.gatekeeper.sh
+  name: global-operators
+  namespace: openshift-operators
+spec: {}
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  labels:
+    operators.coreos.com/gatekeeper-operator-product.openshift-operators: ''
+  name: gatekeeper-operator-product
+  namespace: openshift-operators
+spec:
+  channel: stable
+  installPlanApproval: Automatic
+  name: gatekeeper-operator-product
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+  startingCSV: gatekeeper-operator-product.v0.2.0
