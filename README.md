@@ -10,7 +10,7 @@ Persona: **Alice** is an OpenShift Cluster-Admin. She'd like to setup multi-tena
 
 and achieve the similar result as setting up with the CLI.
 
-This multi-tenancy setup uses *Gatekeeper* for policy enforcement. So we demonstate the seamlessly integration between Flux's GitOps and OpenShift's Operator Framework by managing [Gatekeeper Operator](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/infra/policy-engine-operator/gatekeeper-operator.yaml) with Flux.  You can see labels in the subscription object of Gatekeeper indicating that it's managed by Flux.
+This multi-tenancy setup uses *Gatekeeper* for policy enforcement. So we demonstate the seamlessly integration between Flux's GitOps and OpenShift's Operator Framework by managing the [Gatekeeper Operator's subscription and operator group](https://github.com/openshift-fluxv2-poc/platform-team/blob/main/infra/policy-engine-operator/gatekeeper-operator.yaml) with Flux.  You can see labels in the subscription object of Gatekeeper indicating that it's managed by Flux, for example.
 ![image](https://user-images.githubusercontent.com/10666/137672236-d7b3acc1-2d6a-4249-9495-bdd7a684f279.png)
 
 
